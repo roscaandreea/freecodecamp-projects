@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import "~font-awesome/css/font-awesome.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body{
+  background-color: #87b5b5;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.preview{
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.preview img{
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+textarea, .preview{
+  min-height: 400px;
+  border: 0.5px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control{
+  border: 1px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toolbar{
+    position: relative;
+    background-color: #4aa3a3;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 15px;
+}
+
+.textEditor{
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
