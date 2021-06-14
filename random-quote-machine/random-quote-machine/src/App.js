@@ -78,7 +78,7 @@ class App extends React.Component {
               )
             }
             <div className="d-flex justify-content-between">
-              <a className="btn btn-sm btn-primary"  target="_blank" href={tweetURL} id="tweet-quote"><i className="fab fa-twitter"></i>Twitte</a>
+              <a className="btn btn-sm btn-primary"  target="_blank" href={tweetURL} id="tweet-quote"><i className="fa fa-twitter"></i>Twitte</a>
               <button className="btn btn-sm btn-primary"onClick={this.getRandomItem} id="new-quote">New Quote</button>
             </div>
           </div>
