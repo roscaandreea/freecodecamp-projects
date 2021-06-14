@@ -3,15 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body{
-  background-color: #87b5b5;  
+  background-image: url("https://images.designtrends.com/wp-content/uploads/2015/11/17061911/Aqua-Blue-Wallpaper2.jpg");  
 }
 
+.row{
+  max-width: 100%;
+}
 .preview{
   background-color: white;
-}
-
-.preview img{
-  max-width: 100%;
 }
 
 textarea, .preview{
@@ -24,12 +23,20 @@ textarea, .preview{
 }
 
 .toolbar{
-    position: relative;
-    background-color: #4aa3a3;
-    border: 1px solid #1d2f2f;
-    box-shadow: 1px 1px 10px 2px #3a5f5f;
-    font-family: Russo One;
-    font-size: 15px;
+  position: relative;
+  background-color: #75BEFA;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-family: Russo One;
+  font-size: 15px;
+}
+
+.toolbar.tool_left{
+  margin-left: 40px;
+}
+
+.toolbar.tool_right{
+  margin-right: 40px;
 }
 
 .textEditor{

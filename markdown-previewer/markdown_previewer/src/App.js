@@ -27,7 +27,6 @@ const initialState =`
     let t=x+y;
   \`\`\`
   
-  ![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png)  
 `
 class App extends React.Component{
   constructor(props) {
@@ -57,15 +56,15 @@ class App extends React.Component{
         <div className="row">
           <div className="col-6">
             <h6 className="text-center">Enter your markdown here:</h6>
-            <div className="toolbar">
-              <h5 className="textEditor ml-2"><i className="fa fa-edit"></i>editor</h5>
+            <div className="toolbar tool_left">
+              <h5 className="textEditor"><i className="fa fa-edit"></i>editor</h5>
             <textarea className="form-control p-2" id="editor"  value={this.state.markdown} onChange={this.updateMarkdown}></textarea>
             </div>
           </div>
           <div className="col-6">
             <h6 className="text-center">See the result:</h6>
-             <div className="toolbar">
-               <h5 className="textEditor ml-2"><i className="fa fa-eye"></i>previewer</h5>
+             <div className="toolbar tool_right ">
+               <h5 className="textEditor"><i className="fa fa-eye"></i>previewer</h5>
             <div dangerouslySetInnerHTML={this.previewMarkdown()} className="preview p-2" id="preview" />
             </div>
           </div>
