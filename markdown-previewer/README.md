@@ -1,1 +1,1 @@
-# Markdown-Previewer [![](https://img.shields.io/badge/codepen-ready-yellowgreen)](https://codepen.io/roschy/pen/rNyzoQr)
+# Markdown-Previewer [![](https://img.shields.io/badge/codepen-ready-yellowgreen)](https://codepen.io/roschy/pen/rNyzoQr) [![](https://img.shields.io/badge/marked%20-v2.0.7-brightgreen)](https://marked.js.org/)
