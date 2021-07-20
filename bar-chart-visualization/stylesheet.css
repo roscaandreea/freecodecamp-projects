@@ -1,0 +1,51 @@
+body{
+  background-image: radial-gradient( circle 879px at 10.4% 22.3%, rgba(255,235,238,1) 0%, rgba(186,190,245,1) 93.6%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+svg{
+  border: 1px solid black;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  background-color:white;
+}
+
+rect{
+  fill: #7c40ff;
+}
+
+rect:hover{
+  fill: white;
+}
+
+.tooltip{
+  width: 150px;
+  height: 70px;
+  background-color: #eaeaea;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 100px;
+  top: 100px;
+  
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.tooltip small{
+  margin-bottom: 5px;
+}
+
+.tooltip.show{
+  display: flex;
+}
+
+.container{
+  position: relative;
+}
