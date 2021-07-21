@@ -1,7 +1,5 @@
 
 async function run(){
- 
-const tooltip = document.getElementById('tooltip'); 
 
 const eduRes = await fetch('https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json');
 
@@ -14,9 +12,10 @@ const counties = await countyRes.json();
  const height = 600;
  const padding = 90;
  const k = 9;
+ const tooltip = document.getElementById('tooltip'); 
   
  const path = d3.geoPath(); 
- const data =     topojson.feature(counties,counties.objects.counties).features;
+ const data = topojson.feature(counties,counties.objects.counties).features;
   const minEdu = d3.min(education, edu => edu.bachelorsOrHigher);
   const maxEdu = d3.max(education, edu => edu.bachelorsOrHigher);
   const step = (maxEdu-minEdu)/8;
@@ -47,9 +46,9 @@ const counties = await countyRes.json();
     education.find(ed => ed.fips === d.id ).bachelorsOrHigher)
   .attr('d',path)  
   .on("mouseover", (d,i) => {
-       const { coordinates } = i.geometry;
+       const { coordinates } = d.geometry;
        const [x,y] = coordinates[0][0]; 
-       const edu = education.find(ed => ed.fips === i.id );
+       const edu = education.find(ed => ed.fips === d.id );
    
        tooltip.classList.add("show");
        tooltip.style.left = x - 50 + 'px';
