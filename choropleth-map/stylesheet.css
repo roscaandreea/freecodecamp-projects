@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient( 0.2deg,  rgba(79,104,112,1) -13.8%, rgba(177,234,252,1) 100.2% );
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 120vh;
+     flex-direction: column;
+     font-family: sans-serif;
+   }
+   
+   h1{
+     margin-bottom: 0;
+   }
+   
+   svg{
+     background-color:white;
+   }
+   
+   rect:hover{
+     stroke: black;
+   }
+   
+   .tooltip{
+     background-color: #fff;
+     color: #000;
+     position: absolute;
+     flex-direction: column;
+     display: none;
+     box-shadow: 2px 2px 4px rgba(255,255,255,0.4);
+     text-align: center;
+     opacity: 0.7;
+     border-radius: 10px;
+   }
+   
+   .tooltip p{
+     margin: 5px;
+   }
+   
+   .tooltip.show{
+     display: block;
+   }
+   
+   .container{
+     position: relative;
+   }
+   
+   .legend{
+     position: absolute;
+     text-align: right;
+     top: 20px;
+     right: 110px;
+   }
+   
+   
+   
+   
