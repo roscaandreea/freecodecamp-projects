@@ -41,7 +41,7 @@ treemap(root);
        .attr('height', d => (d.y1 - d.y0))
        .attr('fill', d => color(d.data.category))
        .on("mouseover", (d,i) => {
-         const { name, category, value } = i.data;
+         const { name, category, value } = d.data;
          tooltip.classList.add("show");
          tooltip.style.left = (event.pageX) + 'px';
          tooltip.style.top = (event.pageY -100) + 'px';
