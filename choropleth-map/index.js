@@ -1,5 +1,4 @@
 
-
 async function run(){
  
 const tooltip = document.getElementById('tooltip'); 
@@ -14,6 +13,7 @@ const counties = await countyRes.json();
  const width = 960;
  const height = 600;
  const padding = 90;
+ const k = 9;
   
  const path = d3.geoPath(); 
  const data =     topojson.feature(counties,counties.objects.counties).features;
@@ -23,7 +23,7 @@ const counties = await countyRes.json();
 
   const colorsScale = d3.scaleThreshold()
          .domain(d3.range(minEdu,maxEdu,step))
-         .range(d3.schemePurples[9]);
+         .range(d3.schemePurples[k]);
   const colors = [];
   for(let i=minEdu;i<=maxEdu;i+=step){
     colors.push(colorsScale(i))
