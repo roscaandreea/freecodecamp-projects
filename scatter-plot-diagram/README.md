@@ -1,1 +1,2 @@
 # Visualize Data with Scatterplot Graph [![](https://img.shields.io/badge/codepan-ready-success)](https://codepen.io/roschy/pen/eYWNaGE?editors=0010)
+![scatterPlot](https://user-images.githubusercontent.com/17887606/126471970-3d9ddd76-2f39-456d-bbb4-5fb83305f1e4.png)
