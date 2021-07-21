@@ -47,17 +47,17 @@ body{
   #legend{
     position: absolute;
     text-align: right;
-    top: 325px;
-    right: -98px;
+    top: 365px;
+    right: 140px;
   }
   
   .text1{
     position: absolute;
     text-align: right;
-    top: 180px;
+    top: 210px;
     font-size: 15px;
     font-weight: bold;
-    right: 45px;
+    right: 280px;
   }
   
   .text2{
@@ -65,7 +65,7 @@ body{
     text-align: right;
     font-size: 15px;
     font-weight: bold;
-    right: 40px;
-    top: 505px;
+    right: 280px;
+    top: 550px;
     
   }

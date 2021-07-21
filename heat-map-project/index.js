@@ -101,12 +101,12 @@ svg.selectAll("rect")
     .attr("height", cellHeight)
     .on("mouseover", (d,i) => {
         tooltip.classList.add("show");
-        tooltip.style.left = xScale(i.year) - 60 + 'px';
-        tooltip.style.top = yScale(i.month -1) -60 + 'px';
-        tooltip.setAttribute('data-year',i.year);
+        tooltip.style.left = xScale(d.year) - 60 + 'px';
+        tooltip.style.top = yScale(d.month -1) -60 + 'px';
+        tooltip.setAttribute('data-year',d.year);
         tooltip.innerHTML = `
-          <p>${i.year} - ${months[i.month-1]}</p>
-          <p>${i.temp} °C</p>
+          <p>${d.year} - ${months[d.month-1]}</p>
+          <p>${d.temp} °C</p>
         `;
 }).on("mouseout",()=>{
   tooltip.classList.remove("show");
