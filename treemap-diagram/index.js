@@ -72,7 +72,7 @@ treemap(root);
   const blockSize = 20;
   const legendWidth = 200;
   const legendHeight = (blockSize +2) * categories.lenght;
-       
+      
  const legend = d3.select('body')
          .append("svg")
          .attr('id','legend')
